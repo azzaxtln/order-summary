@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url(../images/pattern-background-mobile.svg);
+  background-color: #d6e1ff;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+  max-width: 340px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero {
+  border-radius: 20px;
+  background-image: url(../images/illustration-hero.svg);
+  max-width: 100%;
+  min-height: 190px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.infos h1 {
+  font-size: 26px;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.infos p {
+  padding-left: 30px;
+  padding-right: 30px;
+  color: hsl(227, 18%, 54%);
+}
+
+.annual-plan {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: hsl(225, 100%, 98%);
+  padding: 15px;
+  border-radius: 10px;
+  min-width: 90%;
+}
+
+.annual-plan h1 {
+  color: hsl(223, 47%, 23%);
+  font-size: 13px;
+}
+
+.annual-plan p {
+  font-size: 13px;
+  color: hsl(227, 18%, 54%);
+}
+
+.icon img{
+    width: 40px;
+    height: 40px;
+}
+.price {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.change {
+  padding-left: 60px;
+}
+
+.change a {
+  color: hsl(245, 75%, 52%);
+  font-weight: 900;
+  font-size: 13px;
+}
+
+.change a:hover {
+  color: hsla(245, 75%, 52%, 0.459);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding-top: 20px;
+  gap: 25px;
+  padding-bottom: 30px;
+}
+
+.proceed {
+  padding: 15px;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  min-width: 90%;
+  box-shadow: 0px 16px 8px rgba(0, 0, 0, 0.082);
+}
+
+.proceed:hover {
+  background-color: hsla(245, 75%, 52%, 0.616);
+}
+
+.buttons a {
+  text-decoration: none;
+  color: hsl(227, 18%, 54%);
+  font-weight: 900;
+}
+
+.buttons a:hover {
+  color: black;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-color: #d6e1ff85;
+  }
+
+  .annual-plan {
+    min-width: 90px;
+}
+
+.proceed {
+    min-width: 84%;
+}
+
+.change {
+  padding-right: 10px;
+}
+}
